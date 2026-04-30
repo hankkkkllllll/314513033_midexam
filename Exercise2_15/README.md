@@ -53,15 +53,15 @@ The project is configured for Windows 11 with an NVIDIA RTX 4070 GPU :
 Run the MATLAB script. It will create a `mydata/` directory and populate it with `.mat` files containing the training, validation, and testing matrices for all 5 environments.
 ```matlab
 % In MATLAB command window
-run('generate_data.m')
+run('main_gen_data.m')
 ```
 ### Step 2: Training Model
 To train on ds1 only and evaluate generalization on ds1 to ds5
 ```python
-run('CsiNet_train(b).py')
+run('python CsiNet_train(b).py')
 ```
 ### Step 3: Training Model (compare)
 To train the model using the mixed dataset approach
 ```python
-run('CsiNet_train(c).py')
+run('python CsiNet_train(c).py')
 ```
