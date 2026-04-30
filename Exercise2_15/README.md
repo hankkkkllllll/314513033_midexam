@@ -58,12 +58,10 @@ run('generate_data.m')
 ### Step 2: Training Model
 To train on ds1 only and evaluate generalization on ds1 to ds5
 ```python
-% In MATLAB command window
 run('CsiNet_train(b).py')
 ```
 ### Step 3: Training Model (compare)
 To train the model using the mixed dataset approach
 ```python
-% In MATLAB command window
 run('CsiNet_train(c).py')
 ```
